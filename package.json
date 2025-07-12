@@ -1,0 +1,37 @@
+{
+  "name": "m3ae4-abp4-box-model",
+  "version": "1.0.0",
+  "description": "Proyecto educativo para demostrar el modelo de cajas CSS utilizando SASS 7-1 pattern",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "sass sass/style.scss css/style.css --style compressed --source-map",
+    "watch-css": "sass sass/style.scss css/style.css --watch --style expanded --source-map",
+    "dev": "sass sass/style.scss css/style.css --watch --style expanded --source-map",
+    "build": "sass sass/style.scss css/style.css --style compressed --no-source-map",
+    "serve": "live-server --port=3000 --host=localhost",
+    "start": "npm run watch-css"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "box-model",
+    "responsive",
+    "web-development",
+    "html",
+    "frontend"
+  ],
+  "author": "Estudiante",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usuario/m3ae4-abp4-box-model.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usuario/m3ae4-abp4-box-model/issues"
+  },
+  "homepage": "https://usuario.github.io/m3ae4-abp4-box-model/"
+}

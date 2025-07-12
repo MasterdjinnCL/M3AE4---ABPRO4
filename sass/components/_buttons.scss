@@ -1,0 +1,96 @@
+.btn {
+  @include button-base;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+  
+  i {
+    margin-right: $spacing-sm;
+  }
+  
+  &--primary {
+    @include button-variant($color-primary, $color-white);
+  }
+  
+  &--secondary {
+    @include button-variant($color-secondary, $color-white);
+  }
+  
+  &--outline-primary {
+    background-color: transparent;
+    color: $color-primary;
+    border-color: $color-primary;
+    
+    &:hover,
+    &:focus {
+      background-color: $color-primary;
+      color: $color-white;
+      border-color: $color-primary;
+    }
+  }
+  
+  &--outline-secondary {
+    background-color: transparent;
+    color: $color-secondary;
+    border-color: $color-secondary;
+    
+    &:hover,
+    &:focus {
+      background-color: $color-secondary;
+      color: $color-white;
+      border-color: $color-secondary;
+    }
+  }
+  
+  &--success {
+    @include button-variant($color-success, $color-white);
+  }
+  
+  &--warning {
+    @include button-variant($color-warning, $color-dark);
+  }
+  
+  &--danger {
+    @include button-variant($color-danger, $color-white);
+  }
+  
+  &--info {
+    @include button-variant($color-info, $color-white);
+  }
+  
+  &--light {
+    @include button-variant($color-light, $color-dark, $color-gray);
+  }
+  
+  &--dark {
+    @include button-variant($color-dark, $color-white);
+  }
+  
+  &--lg {
+    padding: $spacing-md $spacing-xl;
+    font-size: $font-size-lg;
+  }
+  
+  &--sm {
+    padding: $spacing-xs $spacing-md;
+    font-size: $font-size-sm;
+  }
+  
+  &--block {
+    width: 100%;
+    display: flex;
+  }
+  
+  &:disabled,
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

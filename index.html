@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Modelo de Cajas CSS - Box Model</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <h1 class="header__title">Modelo de Cajas CSS</h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#inicio" class="header__nav-link">Inicio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contenido" class="header__nav-link">Contenido</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contacto" class="header__nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__menu-toggle" aria-label="Menú móvil" aria-expanded="false">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+        </div>
+        
+        <nav class="header__nav-mobile">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#inicio" class="header__nav-link">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#contenido" class="header__nav-link">Contenido</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#contacto" class="header__nav-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="inicio">
+            <div class="hero__content">
+                <h1 class="hero__title">Modelo de Cajas CSS</h1>
+                <p class="hero__subtitle">
+                    Demostración práctica del CSS Box Model con diseño responsivo
+                </p>
+                <div class="hero__buttons">
+                    <button class="btn btn--primary btn--large">
+                        <i class="fas fa-play"></i>
+                        Comenzar Demo
+                    </button>
+                    <button class="btn btn--secondary btn--large">
+                        <i class="fas fa-info-circle"></i>
+                        Más Información
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="contenido">
+            <div class="content__wrapper">
+                <h2 class="content__title">Elementos del Box Model</h2>
+                <p class="content__description">
+                    Cada elemento HTML es una caja rectangular que consta de margin, border, padding y content.
+                    En la siguiente demostración puedes ver todas las partes al mismo tiempo:
+                </p>
+                
+                <div class="box-model-legend">
+                    <div class="legend-item">
+                        <span class="legend-color legend-color--content"></span>
+                        <span class="legend-text"><strong>Content</strong> - El contenido real del elemento</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-color--padding"></span>
+                        <span class="legend-text"><strong>Padding</strong> - Espacio interno entre content y border</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-color--border"></span>
+                        <span class="legend-text"><strong>Border</strong> - Borde alrededor del padding</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-color--margin"></span>
+                        <span class="legend-text"><strong>Margin</strong> - Espacio externo alrededor del element</span>
+                    </div>
+                </div>
+                
+                <div class="box-model-demo">                <div class="box-model-demo__element">
+                    <div class="box-model-demo__content">Content</div>
+                    <div class="box-model-demo__label box-model-demo__label--content">Content</div>
+                    <div class="box-model-demo__label box-model-demo__label--padding">Padding</div>
+                    <div class="box-model-demo__label box-model-demo__label--border">Border</div>
+                    <div class="box-model-demo__label box-model-demo__label--margin">Margin</div>
+                </div>
+                </div>
+
+                <div class="content__grid">
+                    <div class="content__text">
+                        <h3 class="content__subtitle">Características del Proyecto</h3>
+                        <ul class="content__list">
+                            <li class="content__list-item">
+                                <i class="fas fa-check"></i>
+                                Contenedor principal al 80% del ancho
+                            </li>
+                            <li class="content__list-item">
+                                <i class="fas fa-check"></i>
+                                Header con ancho completo de pantalla
+                            </li>
+                            <li class="content__list-item">
+                                <i class="fas fa-check"></i>
+                                Footer con altura fija de 100px
+                            </li>
+                            <li class="content__list-item">
+                                <i class="fas fa-check"></i>
+                                Botones con efectos hover y bordes redondeados
+                            </li>
+                            <li class="content__list-item">
+                                <i class="fas fa-check"></i>
+                                Diseño totalmente responsivo
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content__image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                            <span>Imagen Placeholder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="contact__wrapper">
+                <h2 class="contact__title">¿Tienes un proyecto en mente?</h2>
+                <p class="contact__description">
+                    Contáctanos y trabajemos juntos en tu próximo proyecto web.
+                </p>
+                <div class="contact__buttons">
+                    <button class="btn btn--primary">
+                        <i class="fas fa-envelope"></i>
+                        Enviar Mensaje
+                    </button>
+                    <button class="btn btn--secondary">
+                        <i class="fas fa-phone"></i>
+                        Llamar Ahora
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__title">Modelo de Cajas CSS</h3>
+                <p class="footer__text">Proyecto Bootcamp UNAB Frontend </p>
+            </div>
+            <div class="footer__section">
+                <ul class="footer__links">
+                    <li><a href="#inicio" class="footer__link">Inicio</a></li>
+                    <li><a href="#contenido" class="footer__link">Contenido</a></li>
+                    <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="footer__copyright">&copy; 2025 Juan Pablo Berrios</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

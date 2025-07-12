@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build CSS",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build-css"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Watch CSS",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"watch-css"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Start Development Server",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"serve"
+			],
+			"group": "build",
+			"isBackground": true
+		},
+		{
+			"label": "Build for Production",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}
